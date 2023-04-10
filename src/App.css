@@ -1,8 +1,19 @@
 
 
-body {
+.slider-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 background-color: #282c34;
 }
 
+/* .product-container{
+  display: flex;
+  max-width: 100vw;
+  
+} */
 
 

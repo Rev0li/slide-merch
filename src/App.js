@@ -1,13 +1,11 @@
 import "./App.css";
 
-import Merch from "./Merch/merch3";
-
+import ReactCardSlider from "./components/ReactCardSlider";
 function App() {
   return (
-    <div className="App">
-      <Merch />
+    <div className="slider-container">
+      <ReactCardSlider />
     </div>
   );
 }
-
 export default App;

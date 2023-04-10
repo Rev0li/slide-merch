@@ -35,38 +35,9 @@ const articles = [
 ];
 
 export default class Merch extends React.Component {
-  constructor(props) {
-    super(props);
-    this.productContainers = React.createRef();
-    this.nxtBtn = React.createRef();
-    this.preBtn = React.createRef();
-  }
-
-  componentDidMount() {
-    const productContainers = this.productContainers.current;
-    const nxtBtn = this.nxtBtn.current;
-    const preBtn = this.preBtn.current;
-    const containerDimensions = productContainers.getBoundingClientRect();
-    const containerWidth = containerDimensions.width;
-
-    nxtBtn.addEventListener("click", () => {
-      productContainers.scrollLeft += containerWidth;
-    });
-
-    preBtn.addEventListener("click", () => {
-      productContainers.scrollLeft -= containerWidth;
-    });
-  }
-
   slide(article) {
     return (
       <section className="product">
-        <button className="pre-btn" ref={this.preBtn}>
-          <img src="../../images/arrow.png" alt="" />
-        </button>
-        <button className="nxt-btn" ref={this.nxtBtn}>
-          <img src="../../images/arrow.png" alt="" />
-        </button>
         <div className="product-container" ref={this.productContainers}>
           <div className="product-card">
             <div className="product-image">

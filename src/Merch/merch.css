@@ -1,6 +1,7 @@
 
 /* PRODUCTS */
 .product {
+  /* display: flex; */
   position: relative;
   overflow: hidden;
   padding: 20px;
